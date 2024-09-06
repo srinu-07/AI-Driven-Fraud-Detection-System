@@ -56,6 +56,57 @@ Visualization:
 provide a graphical representation of the model's performance, 
 particularly in terms of its trade-offs between sensitivity and specificity.
 
-Link For files: https://drive.google.com/drive/u/1/folders/11n5SLA1vY2WGa3h3L1nlzNAs15-Uj89T
+Project Files
+
+The full project files can be accessed at this Google Drive Link. https://drive.google.com/drive/u/1/folders/11n5SLA1vY2WGa3h3L1nlzNAs15-Uj89T
+
+Prerequisites
+
+Before running the project, make sure the following dependencies are installed:
+
+Python 3.x
+
+scikit-learn
+
+pandas
+
+numpy
+
+matplotlib
+
+pickle
+
+imbalanced-learn (for SMOTE)
+
+
+Usage Instructions
+
+Data Preprocessing: Ensure that the dataset is prepared by applying label encoding and SMOTE to balance the classes.
+
+Train the Model: Run the script to train the Random Forest Classifier on the balanced dataset.
+
+Evaluate the Model: After training, evaluate the model using accuracy, precision, recall, and the ROC curve.
+
+Save and Load the Model: The trained model is saved as a .pkl file and can be reloaded for later use without retraining.
+
+Visualization: Use Matplotlib to plot the ROC curve and visualize the trade-offs between false positives and true positives.
+
+Evaluation
+
+The model's effectiveness is measured based on:
+
+Precision: How many detected frauds are actually frauds.
+
+Recall: How well the model identifies all frauds.
+
+AUC-ROC: A comprehensive metric to evaluate the model's trade-offs between sensitivity and specificity.
+
+Future Enhancements
+
+Feature Engineering: Investigate additional features to improve model accuracy.
+
+Real-time Detection: Integrate the model into a real-time system that can process and flag fraudulent transactions dynamically.
+
+Model Optimization: Tune hyperparameters or explore other algorithms (e.g., XGBoost, LightGBM) for potential performance improvements.
 
 
